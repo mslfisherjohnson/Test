@@ -1,0 +1,50 @@
+<Motion duration="89" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="155.95" y="133" scaleX="1" scaleY="1" rotation="0" elementType="movie clip" symbolName="Text caption">
+			<dimensions>
+				<geom:Rectangle left="-87.95" top="-32" width="175.95" height="64"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.5" y="0.5"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<Keyframe index="0" tweenSnap="true" tweenSync="true">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="11" tweenSnap="true" tweenSync="true" y="67">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="25" tweenSnap="true" tweenSync="true" y="12">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="52" tweenSnap="true" tweenSync="true" x="0.05" y="67">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="73" tweenSnap="true" tweenSync="true" x="0" y="42">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="87" y="67"/>
+
+	<Keyframe index="88" tweenSnap="true" tweenSync="true" y="0">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+</Motion>

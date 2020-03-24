@@ -1,0 +1,42 @@
+<Motion duration="60" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="180" y="200" scaleX="1.023" scaleY="0.992" rotation="0" elementType="movie clip" symbolName="Text caption">
+			<dimensions>
+				<geom:Rectangle left="-87.95" top="-32" width="175.95" height="64"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.49985791418016484" y="0.5"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<Keyframe index="0" tweenSnap="true" tweenSync="true">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="14" tweenSnap="true" tweenSync="true" rotation="-90">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="29" tweenSnap="true" tweenSync="true" rotation="-180">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="44" tweenSnap="true" tweenSync="true" rotation="-270">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="59" tweenSnap="true" tweenSync="true" rotation="-360">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+</Motion>

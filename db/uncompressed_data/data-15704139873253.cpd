@@ -1,0 +1,27 @@
+<Motion duration="60" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="127" y="176.5" scaleX="0.999" scaleY="0.01" rotation="0" elementType="movie clip" symbolName="Symbol 1">
+			<dimensions>
+				<geom:Rectangle left="-100" top="-100" width="100" height="100"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="1" y="1"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<effect_config>
+		<config_item display_name="Ease:">
+			<effect_property type="number" property_value="EASE" default_value="0" valid_range="{{-100,100}}"  increment= "1" modifiers= "{offset:0,multiplier:0.01}" unit="%">
+			</effect_property>
+		</config_item>
+	</effect_config>
+	
+	<Keyframe index="0" tweenSnap="true" tweenSync="true" scaleY="0">
+		<tweens>
+			<SimpleEase ease="EASE"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="59" scaleY="1"/>
+</Motion>

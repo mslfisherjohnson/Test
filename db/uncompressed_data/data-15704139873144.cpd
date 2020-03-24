@@ -1,0 +1,39 @@
+<Motion duration="60" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="51.7" y="75.2" scaleX="1" scaleY="1" rotation="0" elementType="movie clip" instanceName="abc" symbolName="Symbol 1">
+			<dimensions>
+				<geom:Rectangle left="-97" top="-50" width="97" height="50"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.5025773195876289" y="0.505"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<effect_config  effect_type="motion_path">
+	</effect_config>
+
+	<Keyframe index="0" tweenSnap="true" tweenSync="true" transitionType="bezier" x="0" y="0" controlPoint1X="60" controlPoint1Y="0" controlPoint2X="140" controlPoint2Y="0">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="15" tweenSnap="true" tweenSync="true" transitionType="bezier" x="200" y="0" controlPoint1X="270" controlPoint1Y="0" controlPoint2X="400" controlPoint2Y="80">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+	
+	<Keyframe index="45" tweenSnap="true" tweenSync="true" transitionType="bezier" x="400" y="150" controlPoint1X="400" controlPoint1Y="190" controlPoint2X="400" controlPoint2Y="310">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+	
+	<Keyframe index="59" tweenSnap="true" tweenSync="true" transitionType="bezier" x="400" y="350">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+</Motion>

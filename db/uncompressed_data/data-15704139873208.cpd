@@ -1,0 +1,49 @@
+<Motion duration="60" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="99.5" y="55.5" scaleX="2" scaleY="2" rotation="0" elementType="movie clip" instanceName="abc" symbolName="Symbol 1">
+			<dimensions>
+				<geom:Rectangle left="-97" top="-50" width="97" height="50"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.5" y="0.5"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<effect_config>
+		<config_item display_name="Intial zoomX:" >
+			<effect_property type="number" property_value="ZOOMX1" default_value="50" valid_range="{{0,10000}}"  decimal_places="0"  modifiers= "{offset:0,multiplier:0.01}" increment="1" unit="%">
+			</effect_property>
+		</config_item>
+
+		<config_item display_name="Intial zoomY:" >
+			<effect_property type="number" property_value="ZOOMY1" default_value="50" valid_range="{{0,10000}}"  decimal_places="0"  modifiers= "{offset:0,multiplier:0.01}" increment="1" unit="%">
+			</effect_property>
+		</config_item>
+
+		<config_item display_name="Final zoomX:" >
+			<effect_property type="number" property_value="ZOOMX2" default_value="100" valid_range="{{0,10000}}"  decimal_places=""  modifiers= "{offset:0,multiplier:0.01}" increment="1" unit="%">
+			</effect_property>
+		</config_item>
+
+		<config_item display_name="Final zoomY:" >
+			<effect_property type="number" property_value="ZOOMY2" default_value="200" valid_range="{{0,10000}}"  decimal_places=""  modifiers= "{offset:0,multiplier:0.01}" increment="1" unit="%">
+			</effect_property>
+		</config_item>
+
+	</effect_config>
+
+	
+	<Keyframe index="0" tweenSnap="true" tweenSync="true" scaleX="ZOOMX1" scaleY="ZOOMY1">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+
+	<Keyframe index="59" tweenSnap="true" tweenSync="true" scaleX="ZOOMX2" scaleY="ZOOMY2">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+</Motion>

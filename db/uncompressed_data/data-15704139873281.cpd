@@ -1,0 +1,54 @@
+<Motion duration="60" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="176.95" y="189.5" scaleX="0.994" scaleY="0.993" rotation="0" elementType="movie clip" symbolName="Text caption">
+			<dimensions>
+				<geom:Rectangle left="-87.95" top="-32" width="175.95" height="64"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.5" y="0.5"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<effect_config>
+
+		<config_item  display_name="Inital Alpha:">
+			<effect_property type="number" property_value="ALPHA1" default_value="15" valid_range="{{0,100}}"  increment= "1" modifiers= "{offset:0,multiplier:0.01}" unit="%">
+			</effect_property>
+		</config_item>
+
+		<config_item  display_name="Final Alpha:">
+			<effect_property type="number" property_value="ALPHA2" default_value="30" valid_range="{{0,100}}"  increment= "1" modifiers= "{offset:0,multiplier:0.01}" unit="%">
+			</effect_property>
+		</config_item>
+
+	</effect_config>
+
+
+	<Keyframe index="0">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+		<color>
+			<Color alphaMultiplier="ALPHA1"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="58">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+		<color>
+			<Color alphaMultiplier="ALPHA2"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="59">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+		<color>
+		</color>
+	</Keyframe>
+
+</Motion>

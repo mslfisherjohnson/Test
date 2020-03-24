@@ -1,0 +1,38 @@
+<Motion duration="60" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="24" x="168.45" y="167.45" scaleX="0.994" scaleY="0.993" rotation="0" elementType="movie clip" symbolName="Text caption">
+			<dimensions>
+				<geom:Rectangle left="-87.95" top="-32" width="175.95" height="64"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.49985791418016484" y="0.5"/>
+			</transformationPoint>
+		</Source>
+	</source>
+	<effect_config>
+		<config_item display_name="Rotate times:" >
+			<effect_property type="number" property_value="ROTATE_TIMES" default_value="1" valid_range="{{0,100}}"  decimal_places="0"  increment="1">
+			</effect_property>
+		</config_item>
+
+		<config_item display_name="Rotate Direction:">
+			<effect_property type="list" property_value="ROTATE_DIRECTION" default_value="cw">
+				<list_items>
+					<list_item name="CW" value="cw">
+					</list_item>
+					<list_item name="CCW" value="ccw">
+					</list_item>
+				</list_items>
+			</effect_property>
+		</config_item>
+
+	</effect_config>
+
+	<Keyframe index="0" rotateDirection="ROTATE_DIRECTION" rotateTimes="ROTATE_TIMES" tweenSnap="true" tweenSync="true">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="59"/>
+</Motion>

@@ -1,0 +1,38 @@
+<Motion duration="30" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="89.45" y="212.95" scaleX="1" scaleY="1.349" skewX="50.2" skewY="8" elementType="movie clip" symbolName="Text caption">
+			<dimensions>
+				<geom:Rectangle left="-87.95" top="-32" width="175.95" height="64"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.49985791418016484" y="0.5"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<effect_config>
+		<config_item display_name="scaleX:" >
+			<effect_property type="number" property_value="SCALE_X" default_value="2" valid_range="{{-100,100}}"  decimal_places="2" increment="0.1">
+			</effect_property>
+		</config_item>
+
+		<config_item display_name="scaleY:">
+			<effect_property type="number" property_value="SCALE_Y" default_value="2" valid_range="{{-100,100}}" decimal_places="2" increment="0.1">
+			</effect_property>
+		</config_item>
+
+	</effect_config>
+
+	<Keyframe index="0" tweenSnap="true" tweenSync="true" scaleX="SCALE_X" scaleY="SCALE_Y">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="29" tweenSnap="true" tweenSync="true" scaleX="SCALE_X" scaleY="SCALE_Y">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+</Motion>
+

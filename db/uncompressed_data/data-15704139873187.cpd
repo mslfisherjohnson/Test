@@ -1,0 +1,60 @@
+<Motion duration="60" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="136.5" y="152.5" scaleX="0.024" scaleY="0.031" rotation="0" elementType="movie clip" symbolName="Symbol 1">
+			<dimensions>
+				<geom:Rectangle left="-41.5" top="-32.5" width="83" height="65"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.5" y="0.5"/>
+			</transformationPoint>
+		</Source>
+	</source>
+	
+	<effect_config>
+		<config_item display_name="Initial Alpha:">
+			<effect_property type="number" property_value="IN_ALPHA" default_value="100" valid_range="{{0,100}}"  increment= "1" modifiers= "{offset:0,multiplier:0.01}" unit="%">
+			</effect_property>
+		</config_item>
+		
+		<config_item display_name="Initial ScaleX:">
+			<effect_property type="number" property_value="IN_SCALEX" default_value="100" valid_range="{{0,100}}"  increment= "1" modifiers= "{offset:0,multiplier:0.01}" unit="%">
+			</effect_property>
+		</config_item>
+		
+		<config_item display_name="Initial ScaleY:">
+			<effect_property type="number" property_value="IN_SCALEY" default_value="100" valid_range="{{0,100}}"  increment= "1" modifiers= "{offset:0,multiplier:0.01}" unit="%">
+			</effect_property>
+		</config_item>
+		
+		<config_item display_name="Final Alpha:">
+			<effect_property type="number" property_value="OUT_ALPHA" default_value="0" valid_range="{{0,100}}"  increment= "1" modifiers= "{offset:0,multiplier:0.01}" unit="%">
+			</effect_property>
+		</config_item>
+		
+		<config_item display_name="Final ScaleX:">
+			<effect_property type="number" property_value="OUT_SCALEX" default_value="0" valid_range="{{0,100}}"  increment= "1" modifiers= "{offset:0,multiplier:0.01}" unit="%">
+			</effect_property>
+		</config_item>
+		
+		<config_item display_name="Final ScaleY:">
+			<effect_property type="number" property_value="OUT_SCALEY" default_value="0" valid_range="{{0,100}}"  increment= "1" modifiers= "{offset:0,multiplier:0.01}" unit="%">
+			</effect_property>
+		</config_item>
+	</effect_config>
+
+
+	<Keyframe index="0" tweenSnap="true" tweenSync="true" scaleX="IN_SCALEX" scaleY="IN_SCALEY">
+		<color>
+			<Color alphaMultiplier="IN_ALPHA"/>
+		</color>
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="59" scaleX="OUT_SCALEX" scaleY="OUT_SCALEY">
+		<color>
+			<Color alphaMultiplier="OUT_ALPHA"/>
+		</color>
+	</Keyframe>
+</Motion>

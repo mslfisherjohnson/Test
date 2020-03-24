@@ -1,0 +1,32 @@
+<Motion duration="30" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="233.3" y="162.35" scaleX="1" scaleY="1" rotation="0" elementType="movie clip" symbolName="Text caption">
+			<dimensions>
+				<geom:Rectangle left="-87.95" top="-32" width="175.95" height="64"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.49985791418016484" y="0.5"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<effect_config>
+		<config_item display_name="Rotation:" >
+			<effect_property type="number" property_value="ROTATION" default_value="45" valid_range="{{-360,360}}"  increment="1">
+			</effect_property>
+		</config_item>
+
+	</effect_config>
+
+	<Keyframe index="0" tweenSnap="true" tweenSync="true" rotation="ROTATION">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="29" tweenSnap="true" tweenSync="true" rotation="ROTATION">
+		<tweens>
+			<SimpleEase ease="0"/>
+		</tweens>
+	</Keyframe>
+</Motion>

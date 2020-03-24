@@ -1,0 +1,87 @@
+<Motion duration="30" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="221.4" y="161.45" scaleX="1.001" scaleY="1" rotation="0" elementType="movie clip" symbolName="Symbol 1">
+			<dimensions>
+				<geom:Rectangle left="-24.45" top="-24.45" width="48.95" height="48.95"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.49948927477017363" y="0.49948927477017363"/>
+			</transformationPoint>
+		</Source>
+	</source>
+	
+	<effect_config>
+		<config_item display_name="Ease In:">
+			<effect_property type="number" property_value="IN_EASE" default_value="0" valid_range="{{-100,100}}"  increment= "1" modifiers= "{offset:0,multiplier:0.01}" unit="%">
+			</effect_property>
+		</config_item>
+		<config_item display_name="Spin Ease:">
+			<effect_property type="number" property_value="SPIN_EASE" default_value="0" valid_range="{{-100,100}}"  increment= "1" modifiers= "{offset:0,multiplier:0.01}" unit="%">
+			</effect_property>
+		</config_item>
+		<config_item display_name="Ease Out:">
+			<effect_property type="number" property_value="OUT_EASE" default_value="100" valid_range="{{-100,100}}"  increment= "1" modifiers= "{offset:0,multiplier:0.01}" unit="%">
+			</effect_property>
+		</config_item>
+	</effect_config>
+
+	<Keyframe index="0" tweenSnap="true" tweenSync="true" scaleX="1">
+		<color>
+			<Color alphaMultiplier="0"/>
+		</color>
+		<tweens>
+			<SimpleEase ease="IN_EASE"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="4" tweenSnap="true" tweenSync="true" scaleX="-1">
+		<color>
+			<Color redMultiplier="1" greenMultiplier="1" blueMultiplier="1" alphaMultiplier="0.26" redOffset="0" greenOffset="0" blueOffset="0" alphaOffset="0"/>
+		</color>
+		<tweens>
+			<SimpleEase ease="SPIN_EASE"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="9" tweenSnap="true" tweenSync="true" scaleX="1">
+		<color>
+			<Color redMultiplier="1" greenMultiplier="1" blueMultiplier="1" alphaMultiplier="0.41" redOffset="0" greenOffset="0" blueOffset="0" alphaOffset="0"/>
+		</color>
+		<tweens>
+			<SimpleEase ease="SPIN_EASE"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="14" tweenSnap="true" tweenSync="true" scaleX="-1">
+		<color>
+			<Color redMultiplier="1" greenMultiplier="1" blueMultiplier="1" alphaMultiplier="0.55" redOffset="0" greenOffset="0" blueOffset="0" alphaOffset="0"/>
+		</color>
+		<tweens>
+			<SimpleEase ease="SPIN_EASE"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="19" tweenSnap="true" tweenSync="true" scaleX="1">
+		<color>
+			<Color redMultiplier="1" greenMultiplier="1" blueMultiplier="1" alphaMultiplier="0.7" redOffset="0" greenOffset="0" blueOffset="0" alphaOffset="0"/>
+		</color>
+		<tweens>
+			<SimpleEase ease="SPIN_EASE"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="24" tweenSnap="true" tweenSync="true" scaleX="-1">
+		<color>
+			<Color redMultiplier="1" greenMultiplier="1" blueMultiplier="1" alphaMultiplier="0.85" redOffset="0" greenOffset="0" blueOffset="0" alphaOffset="0"/>
+		</color>
+		<tweens>
+			<SimpleEase ease="OUT_EASE"/>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="29" scaleX="1">
+		<color>
+			<Color/>
+		</color>
+	</Keyframe>
+</Motion>
